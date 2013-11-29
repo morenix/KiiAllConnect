@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btnAuthWithProvider"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerProviders"
+        android:layout_below="@+id/spinnerProviders"
+        android:text="@string/authWithProviderButton" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/spinnerProviders"
+        android:layout_below="@+id/imageView1"
+        android:text="@string/authWithProvider" />
+
+    <Spinner
+        android:id="@+id/spinnerProviders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:entries="@array/socialProviders"
+        android:prompt="@string/prompt"
+        tools:listitem="@android:layout/simple_spinner_dropdown_item" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/kiiallconnect" />
+
+    <ImageView
+        android:id="@+id/imgProvider"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignLeft="@+id/btnAuthWithProvider"
+        android:layout_below="@+id/btnAuthWithProvider"
+        android:scaleType="center"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/txtMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imgProvider"
+        android:layout_alignParentBottom="true"
+        android:text="@string/emptyText"
+        android:textColor="@color/blue" />
+
+</RelativeLayout>

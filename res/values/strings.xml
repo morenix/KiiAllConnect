@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Kii All Connect</string>
+    <string name="action_settings">Settings</string>
+    <string name="authWithProvider">Select your authorization provider</string>
+    <string name="authWithProviderButton">Authorize</string>
+    <string-array name="socialProviders">
+        <item> </item>
+        <item>DropBox</item>
+        <item>Box</item>
+        <item>RenRen</item>
+        <item>Weibo</item>
+    </string-array>
+    <string name="prompt">Select a provider</string>
+    <string name="emptyText"></string>
+
+</resources>
